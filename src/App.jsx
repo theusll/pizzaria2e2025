@@ -1,7 +1,7 @@
-import{ useState } from "react"
+import { useState } from "react"
+import poke from './assets/pokeapi_256.png'
 
-
-function app(){
+function App(){
   const [nome, setNome] = useState('Ronaldo')
   const [idade, setIdade] = useState(18)
   const [time, setTime] = useState('cr7')
@@ -37,6 +37,7 @@ function app(){
     Pizzaria let's go
   
   </h3>
+  <img src={poke} style={{width:330}} />
  <Formulario nome="Ricardo" idade={45} sombra= "digite nome..."/>
  <Formulario nome="Maria " sombra= "digite sua idade..."/>
  <Formulario nome="Tomas" sombra= "digite seu time..."/>
@@ -59,4 +60,4 @@ function app(){
 
 }
 
-export default app
+export default App
